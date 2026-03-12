@@ -50,7 +50,7 @@ const Hero = () => {
                     className="hero-image-wrapper"
                 >
                     <div className="hero-image-glow"></div>
-                    <img src="/profile.png" alt="Mohit Kumar Pramanik" className="hero-image" />
+                    <img src="profile.png" alt="Mohit Kumar Pramanik" className="hero-image" />
 
                     {/* Floating badges */}
                     <motion.div
