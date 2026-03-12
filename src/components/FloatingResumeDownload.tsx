@@ -4,7 +4,7 @@ import './FloatingResumeDownload.css';
 const FloatingResumeDownload = () => {
   return (
     <a
-      href="/resume.pdf"
+      href="https://drive.google.com/file/d/1H1hDapoZD5rFJnUPJzx9gAnRx4YdQt_3/view?usp=sharing"
       download
       className="floating-resume"
       aria-label="Download resume"

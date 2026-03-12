@@ -6,7 +6,7 @@ const projects = [
     {
         id: 1,
         title: 'Commonwealth Management Portal',
-        description: 'An enterprise fintech platform to automate complex loan repayment processes. I engineered high-performance frontend modules that reduced initial load times by ~1.8s and improved overall page speed by 30% through strategic code refactoring and lazy loading.',
+        description: 'An enterprise fintech portal for automating complex loan repayment workflows, featuring role-based screens, data-heavy tables, and end-to-end repayment process flows. Built with React + TypeScript, modular UI components, and route-level lazy loading.',
         tech: ['React.js', 'TypeScript', 'Redux', 'Bootstrap', 'SASS'],
         link: '',
         github: '',
@@ -16,21 +16,48 @@ const projects = [
     {
         id: 2,
         title: 'BlogHub: Full Stack Platform',
-        description: 'A production-ready MERN stack publishing system focusing on scalability. Features include secure JWT-based Auth, MVC backend architecture, soft-delete functionality, and server-side pagination. Optimized with frontend code-splitting and memoization to prevent unnecessary re-renders.',
+        description: 'A full‑stack MERN blog platform with secure authentication and a fully responsive UI, where users can publish and manage posts, like/follow, comment, and save posts for later. It includes profile management with image upload, category filtering, theme toggle, pagination, and lazy loading, backed by an MVC API with ownership-based access control so users can’t modify others’ posts or comments.',
         tech: ['MERN', 'TypeScript', 'Bootstrap'],
         link: 'https://bloghub-fe.onrender.com',
-        github: '',
+        github: 'https://github.com/MohitPramanik/Blog-application',
         featured: true
     },
     {
         id: 3,
         title: 'Invitation Template Platform',
-        description: 'A dynamic platform for creating custom invitations for weddings and events. I implemented complex scroll-based animations (GSAP) and a real-time preview system integrated with 17+ REST API endpoints.',
+        description: 'A dynamic invitation template platform for weddings and events featuring multiple templates, scroll-based animations, and fully responsive layouts. Templates are implemented as reusable React components, with content and sections managed via code and API-driven data for rendering',
         tech: ['React.js', 'JavaScript', 'GSAP', 'CSS3'],
         link: '',
         github: '',
         featured: true,
         organization: 'Code Nimbus Solutions'
+    },
+    {
+        id: 4,
+        title: 'Image Editing Platform',
+        description: 'A lightweight, browser-based image editor supporting crop/rotate, drawing, and annotations with multi-select editing and layer controls. Includes zoom/pan for large canvases and selective export of chosen objects, making it useful for quick mockups, documentation screenshots, and everyday image edits.',
+        tech: ['React.js', 'TypeScript', 'Fabric.js', 'Bootstrap'],
+        link: 'https://image-editor-eight-zeta.vercel.app/',
+        github: 'https://github.com/MohitPramanik/Image-Editor?tab=readme-ov-file',
+        featured: true
+    },
+    {
+        id: 5,
+        title: 'DSPMU Clone',
+        description: 'A responsive UI clone of the DSPMU website built with semantic HTML, modern CSS, and vanilla JavaScript. Recreates key pages, layout structure, and interactive UI behaviors.',
+        tech: ['HTML5', 'CSS3', 'JavaScript'],
+        link: 'https://mohitpramanik.github.io/DSPMU-wesbsite-clone/HTML/',
+        github: 'https://github.com/MohitPramanik/DSPMU-wesbsite-clone',
+        featured: false
+    },
+    {
+        id: 6,
+        title: 'E-Kalyan Clone',
+        description: 'A front-end UI clone of the E-Kalyan website built with HTML, CSS, and JavaScript, focused on responsive layouts, component-like sections, and pixel-accurate styling.',
+        tech: ['HTML5', 'CSS3', 'JavaScript'],
+        link: 'https://mohitpramanik.github.io/E-kalyan-website-clone/HTML/index.html',
+        github: 'https://github.com/MohitPramanik/E-kalyan-website-clone',
+        featured: false
     }
 ];
 
@@ -75,6 +102,11 @@ const Projects = () => {
                                             <ExternalLink size={20} />
                                         </a>
                                     )}
+                                    {project.organization && (
+                                        <div className="project-meta">
+                                            <span className="org-badge">{project.organization}</span>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
 
@@ -88,11 +120,7 @@ const Projects = () => {
                                         <span>{project.title}</span>
                                     )}
                                 </h3>
-                                {project.organization && (
-                                    <div className="project-meta">
-                                        <span className="org-badge">{project.organization}</span>
-                                    </div>
-                                )}
+
                                 <p className="project-description">{project.description}</p>
                             </div>
 

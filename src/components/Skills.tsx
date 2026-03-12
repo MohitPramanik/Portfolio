@@ -1,6 +1,9 @@
 import { motion } from 'framer-motion';
-import { Code2, Database, Layout, GitBranch, Terminal } from 'lucide-react';
+import { Code2, Database, GitBranch, Layout } from 'lucide-react';
+import SkillCategoryCard from './SkillCategoryCard';
 import './Skills.css';
+
+const MAX_VISIBLE_SKILLS = 4;
 
 const skillCategories = [
     {
@@ -34,7 +37,7 @@ const skillCategories = [
         color: '#4db33d'
     },
     {
-        title: 'Tools & Version Control',
+        title: 'Developer Tools',
         icon: <GitBranch className="skill-icon" size={24} />,
         skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'AI Tools'],
         color: '#f05032'
@@ -61,31 +64,12 @@ const Skills = () => {
 
                 <div className="skills-grid">
                     {skillCategories.map((category, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="glass-card skill-card"
-                        >
-                            <div
-                                className="skill-icon-wrapper"
-                                style={{ backgroundColor: `${category.color}15`, border: `1px solid ${category.color}30` }}
-                            >
-                                <div style={{ color: category.color }}>{category.icon}</div>
-                            </div>
-                            <h3 className="skill-category-title">{category.title}</h3>
-
-                            <ul className="skill-list">
-                                {category.skills.map((skill, i) => (
-                                    <li key={i} className="skill-item">
-                                        <Terminal size={14} className="skill-bullet" style={{ color: category.color }} />
-                                        <span>{skill}</span>
-                                    </li>
-                                ))}
-                            </ul>
-                        </motion.div>
+                        <SkillCategoryCard
+                            key={category.title}
+                            category={category}
+                            index={index}
+                            maxVisibleSkills={MAX_VISIBLE_SKILLS}
+                        />
                     ))}
                 </div>
 
