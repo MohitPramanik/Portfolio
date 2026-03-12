@@ -77,6 +77,26 @@
     color: var(--accent-color);
 }
 
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.org-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    border: 1px solid rgba(139, 92, 246, 0.35);
+    background: rgba(139, 92, 246, 0.08);
+    letter-spacing: 0.2px;
+}
+
 .project-description {
     color: var(--text-secondary);
     font-size: 1rem;

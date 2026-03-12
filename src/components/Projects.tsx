@@ -6,11 +6,12 @@ const projects = [
     {
         id: 1,
         title: 'Commonwealth Management Portal',
-        description: 'An enterprise fintech platform built for Inadev India to automate complex loan repayment processes. I engineered high-performance frontend modules that reduced initial load times by ~1.8s and improved overall page speed by 30% through strategic code refactoring and lazy loading.',
+        description: 'An enterprise fintech platform to automate complex loan repayment processes. I engineered high-performance frontend modules that reduced initial load times by ~1.8s and improved overall page speed by 30% through strategic code refactoring and lazy loading.',
         tech: ['React.js', 'TypeScript', 'Redux', 'Bootstrap', 'SASS'],
         link: '',
         github: '',
-        featured: true
+        featured: true,
+        organization: 'Inadev India'
     },
     {
         id: 2,
@@ -24,11 +25,12 @@ const projects = [
     {
         id: 3,
         title: 'Invitation Template Platform',
-        description: 'A dynamic platform developed at Code Nimbus Solutions for creating custom invitations for weddings and events. I implemented complex scroll-based animations (GSAP) and a real-time preview system integrated with 17+ REST API endpoints.',
+        description: 'A dynamic platform for creating custom invitations for weddings and events. I implemented complex scroll-based animations (GSAP) and a real-time preview system integrated with 17+ REST API endpoints.',
         tech: ['React.js', 'JavaScript', 'GSAP', 'CSS3'],
         link: '',
         github: '',
-        featured: true
+        featured: true,
+        organization: 'Code Nimbus Solutions'
     }
 ];
 
@@ -86,6 +88,11 @@ const Projects = () => {
                                         <span>{project.title}</span>
                                     )}
                                 </h3>
+                                {project.organization && (
+                                    <div className="project-meta">
+                                        <span className="org-badge">{project.organization}</span>
+                                    </div>
+                                )}
                                 <p className="project-description">{project.description}</p>
                             </div>
 

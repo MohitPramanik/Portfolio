@@ -18,13 +18,13 @@ const skillCategories = [
     {
         title: 'Styling & Animation',
         icon: <Layout className="skill-icon" size={24} />,
-        skills: ['Tailwind CSS', 'Bootstrap', 'GSAP', 'CSS Modules'],
+        skills: ['Tailwind CSS', 'Bootstrap', 'GSAP', 'SASS'],
         color: '#38bdf8'
     },
     {
         title: 'State Management',
         icon: <Database className="skill-icon" size={24} />,
-        skills: ['Redux Toolkit', 'Context API', 'React Query'],
+        skills: ['Redux Toolkit', 'Context API'],
         color: '#764abc'
     },
     {
@@ -36,7 +36,7 @@ const skillCategories = [
     {
         title: 'Tools & Version Control',
         icon: <GitBranch className="skill-icon" size={24} />,
-        skills: ['Git', 'GitHub', 'Postman', 'VS Code'],
+        skills: ['Git', 'GitHub', 'Postman', 'VS Code', 'AI Tools'],
         color: '#f05032'
     }
 ];

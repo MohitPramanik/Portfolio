@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import './Hero.css';
 
 const Hero = () => {
@@ -37,7 +37,8 @@ const Hero = () => {
                             View Work <ArrowRight size={18} />
                         </a>
                         <a href="mailto:mohitpramanik548@gmail.com" className="btn btn-secondary">
-                            Contact Me <Download size={18} />
+                            {/* Contact Me <Download size={18} /> */}
+                            Contact Me <ExternalLink size={18} />
                         </a>
                     </div>
                 </motion.div>
