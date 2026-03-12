@@ -15,3 +15,5 @@ A modern, animated personal portfolio showcasing experience, featured projects, 
 - Vite
 - Framer Motion
 - Lucide React
+
+Live Link: https://mohitpramanik.github.io/Portfolio/
