@@ -9,7 +9,7 @@ const skillCategories = [
     {
         title: 'Frontend Libraries & Frameworks',
         icon: <Layout className="skill-icon" size={24} />,
-        skills: ['React.js', 'Next.js', 'Angular.js'],
+        skills: ['React.js', 'Next.js', 'Angular'],
         color: '#61dafb'
     },
     {
@@ -33,7 +33,7 @@ const skillCategories = [
     {
         title: 'Backend & Databases',
         icon: <Database className="skill-icon" size={24} />,
-        skills: ['Node.js', 'Express.js', 'MongoDB', 'MySQL'],
+        skills: ['Node.js', 'Express.js', 'TypeScript', 'MongoDB', 'MySQL'],
         color: '#4db33d'
     },
     {
@@ -45,8 +45,9 @@ const skillCategories = [
 ];
 
 const Skills = () => {
+
     return (
-        <section id="skills" className="skills-section">
+        <section id="skills-section" className="skills-section">
             <div className="container">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}

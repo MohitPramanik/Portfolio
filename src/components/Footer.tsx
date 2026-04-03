@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Phone } from 'lucide-react';
 import './Footer.css';
+import { Link } from 'react-router';
 
 const Footer = () => {
     return (
@@ -18,10 +19,10 @@ const Footer = () => {
                     <div className="footer-links-group">
                         <div className="footer-links">
                             <h3>Quick Links</h3>
-                            <a href="#home">Home</a>
-                            <a href="#experience">Experience</a>
-                            <a href="#projects">Projects</a>
-                            <a href="#skills">Skills</a>
+                            <Link to={"/"} state={{ scrollTo: "hero-section" }}>Home</Link>
+                            <Link to={"/"} state={{ scrollTo: "experience-section" }}>Experience</Link>
+                            <Link to={"/projects"}>Projects</Link>
+                            <Link to={"/"} state={{ scrollTo: "skills-section" }}>Skills</Link>
                         </div>
 
                         <div className="footer-links">

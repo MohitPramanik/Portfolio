@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Github, Linkedin } from 'lucide-react';
 import './Navbar.css';
+import { Link } from 'react-router';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -12,13 +13,6 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-
-    const navLinks = [
-        { name: 'Home', href: '#home' },
-        { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Skills', href: '#skills' },
-    ];
 
     return (
         <motion.nav
@@ -35,15 +29,10 @@ const Navbar = () => {
                 {/* Desktop Nav */}
                 <div className="desktop-nav">
                     <div className="nav-links">
-                        {navLinks.map((link) => (
-                            <a
-                                key={link.name}
-                                href={link.href}
-                                className="nav-link"
-                            >
-                                {link.name}
-                            </a>
-                        ))}
+                        <Link to={"/"} state={{ scrollTo: "hero-section" }} className="nav-link">Home</Link>
+                        <Link to={"/"} state={{ scrollTo: "experience-section" }} className="nav-link">Experience</Link>
+                        <Link to={"/projects"} className="nav-link">Projects</Link>
+                        <Link to={"/"} state={{ scrollTo: "skills-section" }} className="nav-link">Skills</Link>
                     </div>
 
                     <div className="social-links">
@@ -75,23 +64,11 @@ const Navbar = () => {
                         className="mobile-nav glass"
                     >
                         <div className="mobile-nav-content">
-                            {navLinks.map((link) => (
-                                <a
-                                    key={link.name}
-                                    href={link.href}
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        setIsOpen(false);
-                                        setTimeout(() => {
-                                            const element = document.querySelector(link.href);
-                                            element?.scrollIntoView({ behavior: 'smooth' });
-                                        }, 300); // Wait for menu close animation
-                                    }}
-                                    className="mobile-nav-link"
-                                >
-                                    {link.name}
-                                </a>
-                            ))}
+                            <Link onClick={() => setIsOpen(false)} to={"/"} state={{ scrollTo: "hero-section" }} className="nav-link">Home</Link>
+                            <Link onClick={() => setIsOpen(false)} to={"/"} state={{ scrollTo: "experience-section" }} className="nav-link">Experience</Link>
+                            <Link onClick={() => setIsOpen(false)} to={"/projects"} className="nav-link">Projects</Link>
+                            <Link onClick={() => setIsOpen(false)} to={"/"} state={{ scrollTo: "skills-section" }} className="nav-link">Skills</Link>
+
                             <div className="mobile-social-links">
                                 <a href="https://github.com/MohitPramanik" target="_blank" rel="noreferrer" className="social-icon">
                                     <Github size={24} />

@@ -9,8 +9,8 @@ const experiences = [
         company: 'Inadev India Pvt. Ltd.',
         location: 'Kolkata, West Bengal',
         duration: 'Dec 2024 – Feb 2026',
-        description: 'Led frontend development for 3 core modules using React.js and TypeScript. Built 20+ reusable components and collaborated with Agile cross-functional teams to deliver 25+ business features.',
-        tech: ['React.js', 'TypeScript', 'Redux', 'Bootstrap', 'HTML5', 'SASS']
+        description: 'Led frontend development for 3 core modules using Angular, React.js and TypeScript. Built 20+ reusable components and collaborated with Agile cross-functional teams to deliver 25+ business features.',
+        tech: ['Angular', 'React.js', 'TypeScript', 'Redux', 'Bootstrap', 'HTML5', 'SASS', 'Git', 'GitHub', 'Postman', 'REST APIs']
     },
     {
         id: 2,
@@ -19,14 +19,14 @@ const experiences = [
         location: 'Bangalore, Karnataka',
         duration: 'June 2024 – Nov 2024',
         description: 'Developed a dynamic invitation platform with 10+ real-time customizable templates. Created 15+ modular ES6+ components and integrated 17+ REST APIs while ensuring cross-browser UI stability.',
-        tech: ['React.js', 'JavaScript', 'GSAP', 'HTML5', 'CSS3'],
+        tech: ['React.js', 'JavaScript', 'GSAP', 'HTML5', 'CSS3', 'Git', 'GitHub', 'Postman'],
         certificate: 'https://drive.google.com/file/d/1ECIrLN3TQnELsLcIQ2CojMsgaj1rakgq/view'
     }
 ];
 
 const Experience = () => {
     return (
-        <section id="experience" className="experience-section">
+        <section id="experience-section" className="experience-section">
             <div className="container">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
