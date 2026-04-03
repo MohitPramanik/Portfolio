@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Folder } from 'lucide-react';
 import './Projects.css';
+import { useEffect } from 'react';
 
 const projects = [
     {
@@ -51,6 +52,11 @@ const projects = [
 ];
 
 const Projects = () => {
+
+    useEffect(() => {
+        window.scroll(0, 0);
+    }, [])
+    
     return (
         <section id="projects" className="projects-section">
             <div className="container">

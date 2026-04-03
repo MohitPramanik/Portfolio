@@ -8,11 +8,6 @@ import Home from './components/Home';
 import { useEffect } from 'react';
 
 function App() {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scroll(0, 0);
-  }, [pathname])
 
   return (
     <div className="app-container">
