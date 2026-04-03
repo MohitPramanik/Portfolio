@@ -3,9 +3,8 @@ import Projects from './components/Projects';
 import FloatingResumeDownload from './components/FloatingResumeDownload';
 import Footer from './components/Footer';
 import './App.css';
-import { Route, Routes, useLocation } from 'react-router';
+import { Route, Routes } from 'react-router';
 import Home from './components/Home';
-import { useEffect } from 'react';
 
 function App() {
 
