@@ -9,8 +9,8 @@ const projects = [
         title: 'Vertex - HR Management Portal',
         description: 'Vertex is a full-stack HR management portal built to streamline core people operations in one place. The application includes authentication, authorization, role-based access control (RBAC), employee and department management, recruitment workflows, leave handling, payroll-related views, attendance/timesheet tracking, dashboards, reports, and organization settings.',
         tech: ['Angular', 'Node.js', 'Express.js', 'MongoDB', 'Joi', 'TypeScript', 'SASS', 'Tailwind CSS'],
-        link: 'https://hr-managment-portal.onrender.com',
-        github: 'https://github.com/MohitPramanik/HR-Managment-Portal',
+        link: 'https://vertex-fe-loll.onrender.com',
+        github: 'https://github.com/MohitPramanik/Vertex',
         featured: true,
     },
     {
