@@ -16,4 +16,4 @@ A modern, animated personal portfolio showcasing experience, featured projects, 
 - Framer Motion
 - Lucide React
 
-Live Link: https://mohitpramanik.github.io/Portfolio/
+Live Link: https://portfolio-rho-olive-60.vercel.app/
