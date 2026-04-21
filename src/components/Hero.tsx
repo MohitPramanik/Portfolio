@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, ExternalLink } from 'lucide-react';
+import { Link } from 'react-router';
 import './Hero.css';
 
 const Hero = () => {
@@ -33,9 +34,9 @@ const Hero = () => {
                     </p>
 
                     <div className="hero-actions">
-                        <a href="#projects" className="btn btn-primary">
+                        <Link to={"/projects"} className="btn btn-primary">
                             View Work <ArrowRight size={18} />
-                        </a>
+                        </Link>
                         <a href="mailto:mohitpramanik548@gmail.com" className="btn btn-secondary">
                             {/* Contact Me <Download size={18} /> */}
                             Contact Me <ExternalLink size={18} />

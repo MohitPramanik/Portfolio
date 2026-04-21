@@ -22,9 +22,12 @@ const Navbar = () => {
             className={`navbar ${scrolled ? 'scrolled glass' : ''}`}
         >
             <div className="container nav-container">
-                <a href="#home" className="logo">
+                <Link to={"/"} state={{ scrollTo: "hero-section" }} className="logo">
+                 &lt;<span className="gradient-text">Mohit</span> /&gt;
+                 </Link>
+                {/* <a href="#home" className="logo">
                     &lt;<span className="gradient-text">Mohit</span> /&gt;
-                </a>
+                </a> */}
 
                 {/* Desktop Nav */}
                 <div className="desktop-nav">
