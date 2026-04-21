@@ -27,7 +27,7 @@ const skillCategories = [
     {
         title: 'State Management',
         icon: <Database className="skill-icon" size={24} />,
-        skills: ['Redux Toolkit', 'Context API'],
+        skills: ['Redux Toolkit', 'Context API', 'NgRx', 'RxJS', 'Tanstack Query'],
         color: '#764abc'
     },
     {
