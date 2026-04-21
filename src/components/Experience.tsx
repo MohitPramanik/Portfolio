@@ -10,7 +10,7 @@ const experiences = [
         location: 'Kolkata, West Bengal',
         duration: 'Dec 2024 – Feb 2026',
         description: 'Led frontend development for 3 core modules using Angular, React.js and TypeScript. Built 20+ reusable components and collaborated with Agile cross-functional teams to deliver 25+ business features.',
-        tech: ['Angular', 'React.js', 'TypeScript', 'Redux', 'Bootstrap', 'HTML5', 'SASS', 'Git', 'GitHub', 'Postman', 'REST APIs']
+        tech: ['React.js', 'TypeScript', 'Redux', 'Bootstrap', 'HTML5', 'SASS', 'Git', 'GitHub', 'Postman', 'REST APIs']
     },
     {
         id: 2,
